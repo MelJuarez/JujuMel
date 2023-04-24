@@ -1,0 +1,70 @@
+header{
+    width: 100%;
+    background-color: coral;
+}
+.menu{
+    /*width: 100%;*/
+    margin-top: 1rem;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    background-color: bisque;
+
+
+}
+.menu li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    color: rgb(16, 31, 4);
+    font-family: 'Poppins', sans-serif;
+
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 1rem;
+    
+}
+.encabezado .logo{
+    width: auto;
+    height: 4rem;
+}
+.encabezado .carrito{
+    width: auto;
+    height: 3rem;
+}
+.encabezado button{
+    height: 2rem;
+    border-style: none;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    
+}
+.encabezado .buscar{
+    border-style: none;
+    height: 1.3rem;
+    background-color: coral;
+    border-bottom: 2px solid rgb(75, 25, 7);
+    width: 35%;
+    outline: none;
+    
+}
+.our{
+    font-size: 5.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Braah One', sans-serif;
+
+}

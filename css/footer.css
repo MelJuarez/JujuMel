@@ -1,0 +1,55 @@
+footer{
+    background-color: bisque;
+    height: 12rem;
+    width: 100%;
+
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    
+}
+.redes p{
+    font-size: 2rem;
+}
+
+.red{
+    display: flex;
+    align-items: center;
+    
+}
+.red img{
+    height: 2.5rem;
+    width: auto;
+
+}
+.red a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.info a{
+    text-decoration: none;
+}
+.compra{
+    display: flex;
+
+}
+.compra img{
+    height: 2.5rem;
+    width: auto;
+}
+.compra a {
+   text-decoration: none;
+    margin-left: 1rem;
+}
