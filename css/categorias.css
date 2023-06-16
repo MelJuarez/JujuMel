@@ -1,0 +1,49 @@
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.categorias a{
+    text-decoration: none;
+    display: block;
+    text-align: center; 
+     
+    margin-top: -4%;
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: wheat;
+    background: var(--color2--);
+}
+.categorias img{
+    height: 20rem;
+    width: 17rem;
+    
+}
+.galeria2 h1{
+    font-size: 400%;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 8rem;
+    /*font-family: 'Braah One', sans-serif;*/
+    color: var(--color4--);
+}
+.C{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    height: 20rem;
+    width: 17rem;
+    margin-top: 7rem;
+
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+
+    font-size: 300%;
+    color: coral;
+}

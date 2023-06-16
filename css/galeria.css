@@ -22,12 +22,11 @@
     display: block;
     text-align: center;
 
-  
+
     padding-top: 1rem;
 
     font-size: 3rem;
     color: wheat;
 
-    background: coral;
-    
+    background: var(--color2--);  
 }

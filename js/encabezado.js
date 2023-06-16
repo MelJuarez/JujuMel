@@ -3,19 +3,22 @@
 let contenido_up = `
         <div class="encabezado">
             <img class="logo" src="./img/blocks.png" alt="">
-            <input class="buscar">
-            <button>OFERTAS</button>
+            <div class="search">
+                <p>🔍︎</p>
+                <input class="buscar">
+            </div> 
+            <button>OFERTAS !</button>
             <img class="carrito" src="./img/squares.png" alt="">
         </div>
 
 
         <ul class="menu">
             <!---Opciones de menú -->
-            <li>CATEGORIA</li>
-            <li>CATEGORIA</li>
-            <li>CATEGORIA</li>
-            <li>CATEGORIA</li>
-            <li>CATEGORIA</li>
+            <li><a href="./categoria1.html">CATEGORIA1</a></li>
+            <li><a href="#">CATEGORIA1</a></li>
+            <li><a href="#">CATEGORIA1</a></li>
+            <li><a href="#">CATEGORIA1</a></li>
+            <li><a href="#">CATEGORIA1</a></li>
         </ul>
 
 `
