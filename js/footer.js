@@ -1,21 +1,21 @@
 let contenido_footer = `
-<P>CONTACTANOS</P>
+<P class="contac">CONTACTANOS</P>
 <div class="Estructura">
 
     <div class="redes">       
         <div class="colum1">
             <div class="red">
-                <img src="./img/squares.png" alt="">
+                <img src="./img/insta.png" alt="">
                 <a href="https://www.instagram.com/">Instagram</a>
             </div>
 
             <div class="red">
-                <img src="./img/squares.png" alt="">
+                <img src="./img/face.png" alt="">
                 <a href="https://www.instagram.com/">Facebook</a>
             </div>
 
             <div class="red">
-                <img src="./img/squares.png" alt="">
+                <img src="./img/twitter.png" alt="">
                 <a href="https://www.instagram.com/">Twitter</a>
             </div>
         
@@ -30,7 +30,7 @@ let contenido_footer = `
         </div>
 
         <div class="compra">
-        <img src="./img/squares.png" alt="">
+        <img src="./img/bag.png" alt="">
         <a href="#">Ver Carrito</a>
 
     </div>

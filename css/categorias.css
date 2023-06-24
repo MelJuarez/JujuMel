@@ -8,11 +8,15 @@
     display: block;
     text-align: center; 
      
-    margin-top: -4%;
-    padding-top: 1rem;
-    font-size: 3rem;
-    color: wheat;
-    background: var(--color2--);
+    /*margin-top: -4%;
+    padding-top: 1rem;*/
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--color1--);
+    background: var(--color4--);
 }
 .categorias img{
     height: 20rem;
@@ -24,7 +28,7 @@
     font-weight: 800;
     text-align: center;
     margin-top: 8rem;
-    /*font-family: 'Braah One', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
     color: var(--color4--);
 }
 .C{
@@ -44,6 +48,9 @@
     left: 50%;
     transform: translate(-50%, -50%);     
 
-    font-size: 300%;
-    color: coral;
+    font-size: 250%;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color4--);
+
 }

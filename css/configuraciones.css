@@ -6,12 +6,17 @@
 html{
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
-    /*font-family: 'Braah One', sans-serif;*/
-    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Braah One', sans-serif;
+    /*font-family: 'Cherry Bomb One', cursive;*/
 }
 :root{
-    --color1--: #FFC3A1;
+    --color1--: #FFFFFF;
     --color2--: #F49D1A;
     --color3--: #FFE15D;
-    --color4--: #B01E68;
+    --color4--: #6C28FE;
+    --color5--: rgb(100, 50, 31);
+    --color6--: #ff3a3a;
+    --color7--: #34afe4;
+    --color8--: #ca37ff;
+    --color9--: #3176ff;
 }

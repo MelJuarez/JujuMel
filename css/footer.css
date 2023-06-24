@@ -1,5 +1,5 @@
 footer{
-    background-color:var(--color1--);
+    background-color:var(--color4--);
     height: 35%;
     width: 100%;
 
@@ -13,12 +13,22 @@ footer{
 
 p{
     margin-top: 3rem;
-    font-size: 3rem;
     margin-left: 3rem;
+
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  
+    color: var(--color1--);
+}
+.contac{
+    align-self: center;
+    margin-left: -0.3rem;
 }
 .Estructura{
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 .redes{
     display: flex;
@@ -28,6 +38,7 @@ p{
 .red{
     display: flex;
     align-items: center;
+    margin-top: 0.5rem;
     
 }
 .red img{
@@ -37,32 +48,40 @@ p{
 }
 .red a{
     text-decoration: none;
-    color: rgb(209, 81, 35);
+
+    color: var(--color1--);
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     margin-left: 1rem;
 }
 .info{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    justify-content: center;
     
 }
 .info a{
     text-decoration: none;
-    color: rgb(209, 81, 35);
+
+    color: var(--color1--);
     font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
 }
 .compra{
     display: flex;
-
+    align-items: center;
 }
 .compra img{
-    height: 2.5rem;
+    height: 3.5rem;
     width: auto;
 }
 .compra a {
    text-decoration: none;
-   color: rgb(209, 81, 35);
+
+   color: var(--color1--);
    font-size: 1.5rem;
-    margin-left: 1rem;
+   font-family: 'Poppins', sans-serif;
+
+   margin-left: 1rem;
 }

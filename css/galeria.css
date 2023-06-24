@@ -2,19 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    margin-top: 4rem;
 }
 
 .producto{
     display: flex;
     flex-direction: column;
-    margin-top:4rem;
+    /*margin-top:4rem;*/
 
-    height: 20rem;
+    height: 23rem;
     width: 17rem;
 
 }
 .producto img{
-    height: 20rem;
+    height: 17rem;
     width: 17rem;
 }
 .producto a{
@@ -23,10 +25,14 @@
     text-align: center;
 
 
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     font-size: 3rem;
-    color: wheat;
+    color: var(--color1--);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 
-    background: var(--color2--);  
+    background: var(--color4--);
+    /*background-color: coral;*/
 }
