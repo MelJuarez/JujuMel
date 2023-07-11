@@ -1,0 +1,106 @@
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.C{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    height: 20rem;
+    width: 20rem;
+    margin-top: 7rem;
+}
+.categorias a{
+    text-decoration: none;
+    display: block;
+    text-align: center; 
+    padding-top: 0.5rem;
+    height: 5rem;
+    margin-top: -3%;
+    /*margin-top: -4%;
+    padding-top: 1rem;*/
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--color1--);
+    background: var(--color4--);
+}
+.categorias img{
+    height: 20rem;
+    width: 20rem;
+    filter: brightness(50%);
+}
+.galeria2 h1{
+    font-size: 400%;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 8rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color4--);
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+
+    font-size: 250%;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color1--);
+
+}
+
+/******* CSS CATEGORIASS*************************************/
+
+.Aretes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.Tejidos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.Bizuteria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.PortaAnteojos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.Collares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+.C a{
+    text-decoration: none;
+    display: block;
+    text-align: center; 
+    padding-top: 0.5rem;
+    height: 5rem;
+    margin-top: -3%;
+    /*margin-top: -4%;
+    padding-top: 1rem;*/
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--color1--);
+    background: var(--color4--);
+}
+.C img{
+    height: 20rem;
+    width: 20rem;
+}

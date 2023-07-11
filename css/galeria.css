@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    font-family: 'Poppins', sans-serif;
 
     margin-top: 4rem;
 }
@@ -12,12 +14,11 @@
     /*margin-top:4rem;*/
 
     height: 23rem;
-    width: 17rem;
-
+    width: 20rem;
 }
 .producto img{
     height: 17rem;
-    width: 17rem;
+    width: 20rem;
 }
 .producto a{
     text-decoration: none;
@@ -36,3 +37,5 @@
     background: var(--color4--);
     /*background-color: coral;*/
 }
+
+  

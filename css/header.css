@@ -120,3 +120,6 @@ header{
     text-decoration: none;
     color: var(--color1--);
 }
+.inicio img{
+    height: 4rem;
+}
