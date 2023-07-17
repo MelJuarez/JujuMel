@@ -104,3 +104,9 @@
     height: 20rem;
     width: 20rem;
 }
+.clave{
+    display: none;
+}
+.filtro{
+    display: none;
+}

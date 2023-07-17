@@ -1,4 +1,5 @@
 import { Jujudata } from "../js/JujuMel_data.js";
+import { SEARCH } from "../js/main.js";
 
 //Galeria con los productos ordenados por categoria
 
@@ -18,13 +19,11 @@ function Aretes (){
 
             let item = document.createElement("div")
             item.classList.add("C")
+            item.id="producto"
                 item.innerHTML = `
                     <img class="articulo" src="${element.imagen}" alt="">     
-                    <a href="./visualizar.html">ver
-                    <button class = "btn_ver" >O</button>
-                    </a>
-                
-                
+                    <a  class = "btn_ver">ver</a>
+                    <p class="clave" >${element.nombre}</p>                
                 `
             Lacaja.appendChild(item)
         // console.log(element.categorias)    <div class="titulo">Parejas</div>  
@@ -40,10 +39,10 @@ function Aretes (){
 };
 
 Aretes();
+SEARCH();
 
 function mostrar_artículo(){
         console.log("olaa")
-        alert("aaaaaa")
 
         Jujudata.forEach( element =>{
 

@@ -23,7 +23,7 @@
     },
     {
       id: 2,
-        nombre: "Aretes ganchos",
+        nombre: "Aretes de ganchos",
         precio: 4.99,
         opciones: ["Sin opciones por el momento"],
         categorias:"arete",
@@ -168,7 +168,7 @@
     //SECCIÓN GARGANTILLAS **********************************************************************
     {
       id: 16,
-      nombre: "Gargantilla de Bisuteria - Soft",
+      nombre: "Gargantilla de Bizuteria - Soft",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro"],
@@ -178,7 +178,7 @@
     },
     {
       id: 17,
-      nombre: "Gargantilla de Bisuteria - Indie",
+      nombre: "Gargantilla de Bizuteria - Indie",
       precio: 14.99,
       opciones: ["Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro","Multicolor"],

@@ -5,17 +5,46 @@ let contenido_up = `
             <img class="logo" src="./img/logo.png" alt="">
             <div class="search">
                 <p>🔍︎</p>
-                <input class="buscar">
+                <input class="buscar" type="text" name="buscar" id="buscar">
             </div> 
-            <button>OFERTAS !</button>
-
-            <a class="inicio" href="index.html">
-                <img src="./img/casa.png" alt="">
-            </a>
-
-            <img class="carrito" src="./img/bag.png" alt="">
         </div>
 
+        <main class="menu_flotante">
+
+        <div class="minibox">
+            <a href="./index.html">
+                <img src="./img/bag.png" alt="">
+                <p class="text">Bag</p>
+            </a>
+            
+        </div>
+
+           
+        <div class="minibox">
+            <a href="./index.html">
+                <img src="./img/casa.png" alt="">
+                <p class="text">Home</p>
+            </a>
+            
+        </div>
+        
+        <div class="minibox">
+            <a href="./index.html">
+                <img src="./img/descuento.png" alt="">
+                <p class="text">Offers</p>
+           </a>
+          
+        </div>
+
+        <div class="minibox">
+            <a href="./index.html">
+                <img src="./img/corazon.png" alt="">
+                <p class="text">Wishlist</p>
+            </a>
+            
+        </div>
+       
+    </main>
 
         <ul class="menu">
             <!---Opciones de menú -->

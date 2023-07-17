@@ -1,4 +1,5 @@
 import { Jujudata } from "../js/JujuMel_data.js";
+import { SEARCH } from "../js/main.js";
 
 function Bizuteria (){
 
@@ -12,11 +13,14 @@ function Bizuteria (){
 
             let item = document.createElement("div")
             item.classList.add("C")
+            item.id="producto"
                 item.innerHTML = `
                     <img src="${element.imagen}" alt="">
+                    
                     <a href="./visualizar.html">
                         ver
                     </a>
+                    <p class="clave" >${element.nombre}</p>
                 `
             Lacaja.appendChild(item)
         }else{
@@ -26,3 +30,4 @@ function Bizuteria (){
 }
 
 Bizuteria();
+SEARCH();

@@ -1,25 +1,26 @@
 import { Jujudata } from "./JujuMel_data.js";
+import { SEARCH } from "./main.js";
 
     
 //Galería con ofertas y productos más vendidos    
     let contenido_galeria1 = `
 
-        <div class="producto" id="uno">
+        <div class="producto" id="producto">
             <img src="${Jujudata[16]["imagen"]}" alt="">
             <a href="#">ver</a>
         </div>
 
-        <div class="producto" id="dos">
+        <div class="producto" id="producto">
             <img src="${Jujudata[9]["imagen"]}" alt="">
             <a href="#">ver</a>
         </div>
 
-        <div class="producto" id="dos">
+        <div class="producto" id="producto">
             <img src="${Jujudata[2]["imagen"]}" alt="">
             <a href="#">ver</a>
         </div>
 
-        <div class="producto" id="dos">
+        <div class="producto" id="producto">
             <img src="${Jujudata[17]["imagen"]}" alt="">
             <a href="#">ver</a>
         </div>
@@ -28,6 +29,8 @@ import { Jujudata } from "./JujuMel_data.js";
 
     let galeria_1 = document.querySelector(".galeria1")
     galeria_1.innerHTML = contenido_galeria1;
+
+    SEARCH();
 
 
 //No está en uso****************************************************

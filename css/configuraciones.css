@@ -20,3 +20,6 @@ html{
     --color8--: #ca37ff;
     --color9--: #3176ff;
 }
+.filtro{
+    display: none;
+}
