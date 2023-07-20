@@ -12,7 +12,12 @@
     width: 24rem;
     margin-top: 7rem;
 
-    background-color: aqua;
+    background-color: #FFFF;
+
+    border-radius: 2rem;
+     box-shadow: 0px 2px 5px 10px rgba(235,227,241,1);
+    -webkit-box-shadow: 0px 2px 5px 10px rgba(235,227,241,1);
+    -moz-box-shadow: 0px 2px 5px 10px rgba(235,227,241,1);
 }
 .C a{
     text-decoration: none;

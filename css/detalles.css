@@ -26,7 +26,7 @@
     font-family: 'Poppins';
     font-weight: 700;
 }
-.detalles img {
+.detalles .articulo {
     height: 25rem;
     width: 25rem;
   
@@ -85,13 +85,69 @@
    
     width: auto;
 }
-.marcar[type="checkbox"] {
-    transform: scale(1.8); /* Escala del checkbox, puedes ajustar el valor para cambiar el tamaño */
-  }
+/*.marcar[type="checkbox"] {
+    transform: scale(1.8); /* Escala del checkbox, puedes ajustar el valor para cambiar el tamaño 
+  }*/
 
+.marcar .comprarr{
+    height: 4rem;
+    width: auto;
+}
 .oculto{
     display: none;
 }
+
+  /* Estilos para la ventana emergente */
+  .ventana-emergente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .ventana-emergente img {
+    width: 23rem;
+    height: 23rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ventana-emergente p {
+    margin: 5px 0;
+  }
+  
+  .ventana-emergente label {
+    display: block;
+    width: 23rem;
+    margin-top: 10px;
+  }
+  
+  .ventana-emergente input,
+  .ventana-emergente select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ventana-emergente .cerrar-ventana {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
   
 
 @media only screen and (min-width:579px){
@@ -99,6 +155,11 @@
         justify-content: space-around;
         height: 31rem;
     }
+    .ventana-emergente label {
+        display: block;
+        width: 45rem;
+        margin-top: 10px;
+      }
 
 }
 
@@ -106,3 +167,8 @@
 
 
 }
+
+
+  
+
+ 

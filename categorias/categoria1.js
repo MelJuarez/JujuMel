@@ -3,6 +3,7 @@ import { SEARCH } from "../js/main.js";
 import { mostrarDetalles } from "../js/main.js";
 import { cerrarDetalles } from "../js/main.js";
 import { cierre } from "../js/main.js";
+import { mostrarVentanaEmergente } from "../js/main.js";
 
 
 //Galeria con los productos ordenados por categoria
@@ -45,7 +46,15 @@ function Aretes (){
             console.log("Incorrecto")
         }
    
-    })    
+    })  
+    
+    document.body.appendChild(ventanaEmergente);
+    
+        // Agrega evento click al botón de cerrar ventana
+        const cerrarVentanaBtn = ventanaEmergente.querySelector(".cerrar-ventana");
+        cerrarVentanaBtn.addEventListener("click", () => {
+            ventanaEmergente.remove();
+        });
 
 };
 

@@ -41,6 +41,15 @@ function Bizuteria (){
             
         }
     })
+
+    document.body.appendChild(ventanaEmergente);
+    
+    // Agrega evento click al botón de cerrar ventana
+    const cerrarVentanaBtn = ventanaEmergente.querySelector(".cerrar-ventana");
+    cerrarVentanaBtn.addEventListener("click", () => {
+        ventanaEmergente.remove();
+    });
+    
 }
 
 Bizuteria();
