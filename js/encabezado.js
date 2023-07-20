@@ -14,7 +14,7 @@ let contenido_up = `
         <div class="minibox">
             <a href="./index.html">
                 <img src="./img/bag.png" alt="">
-                <p class="text">Bag</p>
+                <p class="texto">Bag</p>
             </a>
             
         </div>
@@ -23,7 +23,7 @@ let contenido_up = `
         <div class="minibox">
             <a href="./index.html">
                 <img src="./img/casa.png" alt="">
-                <p class="text">Home</p>
+                <p class="texto">Home</p>
             </a>
             
         </div>
@@ -31,7 +31,7 @@ let contenido_up = `
         <div class="minibox">
             <a href="./index.html">
                 <img src="./img/descuento.png" alt="">
-                <p class="text">Offers</p>
+                <p class="texto">Offers</p>
            </a>
           
         </div>
@@ -39,7 +39,7 @@ let contenido_up = `
         <div class="minibox">
             <a href="./index.html">
                 <img src="./img/corazon.png" alt="">
-                <p class="text">Wishlist</p>
+                <p class="texto">Wishlist</p>
             </a>
             
         </div>

@@ -6,25 +6,25 @@ let contenido_categorias = `
 
     <div class="categorias">
 
-        <div class="C" id="uno">
+        <div class="D" id="uno">
             <img src="${Jujudata[6]["imagen"]}" alt="">
             <div class="titulo">Parejas</div>           
            
         </div>
 
-        <div class="C" id="dos">
+        <div class="D" id="dos">
             <img src="${Jujudata[18]["imagen"]}" alt="">
             <div class="titulo">Bautizo</div>           
             
         </div>
 
-        <div class="C" id="tres">
+        <div class="D" id="tres">
             <img src="${Jujudata[12]["imagen"]}" alt="">
             <div class="titulo">Amistad</div>           
             
         </div>
 
-        <div class="C" id="dos">
+        <div class="D" id="dos">
             <img src="${Jujudata[11]["imagen"]}" alt="">
             <div class="titulo">Da un Regalo</div>           
          

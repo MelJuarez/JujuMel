@@ -1,15 +1,15 @@
 import { Jujudata } from "../js/JujuMel_data.js";
 import { SEARCH } from "../js/main.js";
+import { mostrarDetalles } from "../js/main.js";
+import { cerrarDetalles } from "../js/main.js";
+import { cierre } from "../js/main.js";
+
 
 //Galeria con los productos ordenados por categoria
 
-function Aretes (){
+    let SeccionAretes = document.querySelector(".Aretes")
 
-    let clasificar = "arete"
-    let aaa = Jujudata.map(function(objeto){
-        return objeto.categorias
-    })
-    console.log(aaa)
+function Aretes (){
 
     Jujudata.forEach( element =>{
    
@@ -21,49 +21,40 @@ function Aretes (){
             item.classList.add("C")
             item.id="producto"
                 item.innerHTML = `
+
                     <img class="articulo" src="${element.imagen}" alt="">     
-                    <a  class = "btn_ver">ver</a>
-                    <p class="clave" >${element.nombre}</p>                
+                      
+                    <div class="orden">
+                        <div class="detalle_info">
+                            <p class="clave" >${element.nombre}</p>
+                            <img class="corazon" src="./img/amor.png" alt="">
+                        </div> 
+                        <p class="money">Q. ${element.precio}</p>
+                    </div>  
+                             
                 `
+
             Lacaja.appendChild(item)
-        // console.log(element.categorias)    <div class="titulo">Parejas</div>  
-            console.log("Correcto")
+
+            item.addEventListener("click", () => { //Mostrar los productos a detalle
+                mostrarDetalles(element,Lacaja);
+            });
+
         }else{
            
             console.log("Incorrecto")
         }
-
-        
-    }) 
+   
+    })    
 
 };
 
+//    <a  class = "btn_ver">ver</a> 
+
 Aretes();
-SEARCH();
+SEARCH(); //Buscador individual
+cerrarDetalles(SeccionAretes);
+cierre();
 
-function mostrar_artículo(){
-        console.log("olaa")
-
-        Jujudata.forEach( element =>{
-
-            console.log(element.nombre)
-            if(element["categorias"] == "arete"){
-
-                let eldom = document.querySelector(".ver")
-                eldom.innerHTML=`
-                    <p>${element.nombre}</p> 
-                `
-
-                //}console.log(element.nombre)
-            }
-        })
-
-}
-
-document.querySelector(".btn_ver").addEventListener("click",mostrar_artículo)
-
-
-
-//EJECUTANDO FUNCIONES ********************************************************
-
-//Aretes();
+// --size: 200px;
+//<div class="heart"></div> 

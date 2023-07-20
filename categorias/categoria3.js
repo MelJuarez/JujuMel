@@ -1,5 +1,10 @@
 import { Jujudata } from "../js/JujuMel_data.js";
 import { SEARCH } from "../js/main.js";
+import { mostrarDetalles } from "../js/main.js";
+import { cerrarDetalles } from "../js/main.js";
+import { cierre } from "../js/main.js";
+
+    let SeccionBizu = document.querySelector(".Bizuteria")
 
 function Bizuteria (){
 
@@ -15,14 +20,23 @@ function Bizuteria (){
             item.classList.add("C")
             item.id="producto"
                 item.innerHTML = `
-                    <img src="${element.imagen}" alt="">
-                    
-                    <a href="./visualizar.html">
-                        ver
-                    </a>
-                    <p class="clave" >${element.nombre}</p>
+                
+                    <img class="articulo" src="${element.imagen}" alt="">     
+                        
+                    <div class="orden">
+                        <div class="detalle_info">
+                            <p class="clave" >${element.nombre}</p>
+                            <img class="corazon" src="./img/amor.png" alt="">
+                        </div> 
+                        <p class="money">Q. ${element.precio}</p>
+                    </div> 
                 `
             Lacaja.appendChild(item)
+
+            item.addEventListener("click", () => { //Mostrar los productos a detalle
+                mostrarDetalles(element,Lacaja);
+            });
+
         }else{
             
         }
@@ -31,3 +45,5 @@ function Bizuteria (){
 
 Bizuteria();
 SEARCH();
+cerrarDetalles(SeccionBizu);
+cierre();

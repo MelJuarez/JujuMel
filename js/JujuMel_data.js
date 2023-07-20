@@ -168,7 +168,7 @@
     //SECCIÓN GARGANTILLAS **********************************************************************
     {
       id: 16,
-      nombre: "Gargantilla de Bizuteria - Soft",
+      nombre: "Gargantilla / Collar de Bizuteria - Soft",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro"],
@@ -178,7 +178,7 @@
     },
     {
       id: 17,
-      nombre: "Gargantilla de Bizuteria - Indie",
+      nombre: "Gargantilla / Collar de Bizuteria - Indie",
       precio: 14.99,
       opciones: ["Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro","Multicolor"],
