@@ -3,8 +3,6 @@ import { SEARCH } from "../js/main.js";
 import { mostrarDetalles } from "../js/main.js";
 import { cerrarDetalles } from "../js/main.js";
 import { cierre } from "../js/main.js";
-import { mostrarVentanaEmergente } from "../js/main.js";
-
 
 //Galeria con los productos ordenados por categoria
 
@@ -56,7 +54,7 @@ function Aretes (){
             ventanaEmergente.remove();
         });
 
-};
+}
 
 //    <a  class = "btn_ver">ver</a> 
 

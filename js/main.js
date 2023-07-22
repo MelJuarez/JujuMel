@@ -49,6 +49,8 @@ export function mostrarDetalles(producto,caja) {
                     <select id="opciones-select">
                         ${producto.opciones.map(opcion => `<option value="${opcion}">${opcion}</option>`).join("")}
                     </select>
+                    <input type="number" id="cantidad-input" value="1" min="1">
+
                 </div>
                 
             </div>
@@ -87,6 +89,11 @@ export function mostrarDetalles(producto,caja) {
          // Dentro de la función mostrarDetalles
          const marcarBtn = Cajadetalles.querySelector(".marcar .comprarr");
          marcarBtn.addEventListener("click", mostrarVentanaEmergente)
+
+
+
+         const cantidadInput = Cajadetalles.querySelector("#cantidad-input").value;
+         console.log(cantidadInput)
 }
 
 //let lacaja = document.querySelector(".Aretes");
@@ -119,15 +126,16 @@ export function cerrarDetalles(categoria) {
     }
 
  
-
+/*
     export function mostrarVentanaEmergente(event) {
         console.log("akjsd")
         const productoImagen = event.target.closest(".detalles").querySelector(".articulo").src;
         const productoTalla = document.getElementById("talla-select").value;
         const productoOpcion = document.getElementById("opciones-select").value;
         const productoPrecio = event.target.closest(".detalles").querySelector(".articuloC2 p").textContent;
+      
     
-        // Crea la ventana emergente
+        // Crea la ventana emergente  <p>Precio: ${productoPrecio}</p>
         const ventanaEmergente = document.createElement("div");
         ventanaEmergente.classList.add("ventana-emergente");
     
@@ -136,7 +144,9 @@ export function cerrarDetalles(categoria) {
             <img class="articulo" src="${productoImagen}" alt="">
             <p>Talla: ${productoTalla}</p>
             <p>Opción: ${productoOpcion}</p>
-            <p>Precio: ${productoPrecio}</p>
+          
+            <p>Precio: Q. ${productoPrecio}</p>
+            <p class="total-precio">Total: Q. ${productoPrecio}</p>
             <label for="email">Correo:</label>
             <input type="email" id="email" required>
             <label for="nombre">Nombre:</label>
@@ -159,13 +169,47 @@ export function cerrarDetalles(categoria) {
             <label for="telefono">Teléfono:</label>
             <input type="tel" id="telefono" required>
         `;
-    
+
         document.body.appendChild(ventanaEmergente);
     
+
+
+
+
+       
         // Agrega evento click al botón de cerrar ventana
         const cerrarVentanaBtn = ventanaEmergente.querySelector(".cerrar-ventana");
         cerrarVentanaBtn.addEventListener("click", () => {
             ventanaEmergente.remove();
         });
+
+
+
+
+        console.log("aaaaa")
+                    // Agrega evento input al campo de cantidad
+        //const cantidadInput = Cajadetalles.mostrarDetalles.querySelector("#cantidad-input");
+        
+        //const cantidad = parseInt(cantidadInput.value);
+       let aja = mostrarDetalles.querySelector("#cantidad-input")
+       console.log(aja)
+    
+        
+        cantidadInput.addEventListener("input", () => {
+            console.log(cantidadInput)
+
+            console.log("aayaa")
+            if (!isNaN(cantidad) && cantidad > 0) {
+                const precioTotal = (productoPrecio * cantidad).toFixed(2);
+                ventanaEmergente.querySelector(".total-precio").textContent = `Total: Q. ${precioTotal}`;
+            }
+    });
+
+
+
     }
     
+
+
+*/
+

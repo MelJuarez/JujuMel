@@ -117,8 +117,7 @@
     height: 23rem;
     display: block;
     margin: 0 auto;
-    margin-top: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
   
   .ventana-emergente p {
@@ -147,7 +146,24 @@
     font-size: 20px;
     cursor: pointer;
   }
-  
+ 
+  #cantidad-input{
+    height: 4rem;
+    padding: 0.1rem;
+    width: 60px; /* Adjust the width as needed */
+    padding: 5px;
+    font-size: 16px;
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  #cantidad-input::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   
 
 @media only screen and (min-width:579px){

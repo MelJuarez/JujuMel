@@ -13,7 +13,7 @@ let contenido_up = `
 
         <div class="minibox">
             <a href="./index.html">
-                <img src="./img/bag.png" alt="">
+                <img class= "bolsas" src="./img/bag.png" alt="">
                 <p class="texto">Bag</p>
             </a>
             
@@ -59,3 +59,14 @@ let contenido_up = `
 let up =  document.querySelector("header");
 
 up.innerHTML = contenido_up; 
+
+
+let carrito = [];
+
+function actualizarBurbuja() {
+  const bolsasImg = document.querySelector(".bolsas");
+  const burbuja = document.createElement("span");
+  burbuja.classList.add("burbuja");
+  burbuja.textContent = carrito.length;
+  bolsasImg.appendChild(burbuja);
+}
