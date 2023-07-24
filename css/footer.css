@@ -9,6 +9,10 @@ footer{
     flex-direction: column;
     margin-top: 20%;
     margin-bottom: -2rem;
+    position: relative;
+    bottom: -12vh;
+    left: 0;
+ 
   
 }
 

@@ -45,7 +45,8 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     
 }
 .encabezado .logo{
@@ -93,6 +94,8 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    padding-bottom: 1rem;
     
     /*
     position: fixed;

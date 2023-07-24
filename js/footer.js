@@ -24,14 +24,11 @@ let contenido_footer = `
     </div>
 
         <div class="info">
-        <a href="#">ABOUT US</a>
+        <a href="./About.html">ABOUT US</a>
         <a href="#">MISION</a>
         <a href="#">VISION</a>
         </div>
 
-        <div class="compra">
-        <img src="./img/bag.png" alt="">
-        <a href="#">Ver Carrito</a>
 
     </div>
 </div>
