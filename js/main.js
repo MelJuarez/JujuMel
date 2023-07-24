@@ -110,6 +110,7 @@ export function actualizarAcumulado() {
         }
     }
     
+  const titleOur = document.querySelector(".contenedor")
 
 export function mostrarCarrito() {
     const carritoDiv = document.createElement("div");
@@ -176,7 +177,9 @@ export function mostrarCarrito() {
           const cerrarBtn = document.createElement("button");
           cerrarBtn.textContent = "Cerrar";
           cerrarBtn.addEventListener("click", () => {
+            titleOur.classList.remove("RemoverC")
             detalleDiv.innerHTML = ""; // Vaciamos el contenido previo de detalleDiv
+          
           });
       
           carritoDiv.appendChild(cerrarBtn);        
@@ -186,11 +189,13 @@ export function mostrarCarrito() {
       }
 
 
-   
+
+      
  // Agregar evento al botón de "bolsas" para mostrar el carrito
  document.querySelector(".bolsas").addEventListener("click", () => {
    
     mostrarCarrito();
+    titleOur.classList.add("RemoverC")
   
   });
 
@@ -325,7 +330,7 @@ export function mostrarVentanaEmergente() {
           }
         });
       
-        function cerrarVentanaEmergente() {
+  function cerrarVentanaEmergente() {
           ventanaEmergente.style.display = "none";
         }
         
