@@ -2,18 +2,23 @@ import { Jujudata } from "./JujuMel_data.js";
 import { mostrarDetalles } from "./main.js";
 import { cerrarDetalles } from "./main.js";
 import { cierre } from "./main.js";
+import { carrito } from "./main.js";
 
 
-
-let galeria = document.querySelector(".galeria1")
-
-// Obtener el input del buscador y el div donde se mostrarán los resultados
+const titleOur = document.querySelector(".contenedor");
 const searchInput = document.getElementById("buscar");
 const resultadosDiv = document.querySelector(".resultados");
 
-// Evento para manejar la búsqueda
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
+
+  if (searchTerm === "") {
+    resultadosDiv.innerHTML = "";
+    document.querySelector(".galeria2").classList.remove("NOC");
+    titleOur.classList.remove("hide")
+    return;
+  }
+
   const resultados = Jujudata.filter((producto) =>
     producto.nombre.toLowerCase().includes(searchTerm)
   );
@@ -21,75 +26,51 @@ searchInput.addEventListener("input", () => {
   mostrarResultados(resultados);
 });
 
-// Función para mostrar los resultados del buscador
 function mostrarResultados(resultados) {
-
+  resultadosDiv.innerHTML = "";
+ 
 
   if (resultados.length === 0) {
-
-    resultados.classList.add("NO")    
-    
+    resultadosDiv.classList.add("NO");
+    document.querySelector(".galeria2").classList.remove("NOC");
   } else {
 
-    let gale2 = document.querySelector(".galeria2");
-    gale2.classList.add("NOC");
+    titleOur.classList.add("hide");
 
-    resultadosDiv.innerHTML = "";
-
+    resultadosDiv.classList.remove("NO");
     resultados.forEach((element) => {
       const item = document.createElement("div");
       item.classList.add("C");
       item.id = "producto";
       item.innerHTML = `
-          <img  class="articulo" src="${element.imagen}" alt="">
-
-          <div class="orden">
-              <div class="detalle_info">
-                  <p class="clave" >${element.nombre}</p>
-                  <img class="corazon" src="./img/amor.png" alt="">
-              </div> 
-              <p class="money">Q. ${element.precio}</p>
-          </div>                
+        <img  class="articulo" src="${element.imagen}" alt="">
+        <div class="orden">
+          <div class="detalle_info">
+            <p class="clave">${element.nombre}</p>
+            <img class="corazon" src="./img/amor.png" alt="">
+          </div> 
+          <p class="money">Q. ${element.precio}</p>
+        </div>                
       `;
       resultadosDiv.appendChild(item);
 
-    
-
-      item.addEventListener("click", () => { //Mostrar los productos a detalle
-        mostrarDetalles(element,resultadosDiv);
-
-       
-    });
-
+      item.addEventListener("click", () => {
+        mostrarDetalles(element, resultadosDiv);
+      });
+      
     });
   }
 }
 
+export function actualizarAcumulado() {
+  const bolsasImg = document.querySelector(".bolsas");
+  const acumulado = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+  bolsasImg.setAttribute("data-acumulado", acumulado);
+}
 
-searchInput.addEventListener("input", () => {
-  const searchTerm = searchInput.value.toLowerCase();
-
-  // Si el término de búsqueda está vacío, no mostramos ningún resultado
-  if (searchTerm === "") {
-    resultadosDiv.innerHTML = "";
-
-    let gale2 = document.querySelector(".galeria2");
-    gale2.classList.remove("NOC");
-
-    return;
-    
-  }
-
-  let resultados = Jujudata.filter((producto) =>
-    producto.nombre.toLowerCase().includes(searchTerm)
-  );
-
-  mostrarResultados(resultados);
-});
-
-
-//ver();
-//SEARCH();
-cerrarDetalles(galeria);
+cerrarDetalles(document.querySelector(".galeria1"));
 cierre();
+
+cerrarDetalles(galeria);
+//cierre();
 

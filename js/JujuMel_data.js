@@ -25,15 +25,24 @@
       id: 2,
         nombre: "Aretes de ganchos",
         precio: 4.99,
-        opciones: ["Sin opciones por el momento"],
+        opciones: ["Sin opciones"],
         categorias:"arete",
         talla:["XS","S","M","L","XL"],
         imagen: "https://i.pinimg.com/564x/11/82/41/1182418fe9b42b060ab7f08f7afe0401.jpg",
     },
+    {
+      id: 3,
+        nombre: "Aretes Bunny",
+        precio: 6.99,
+        opciones: ["Blanco","Negro","Manchado"],
+        categorias:"arete",
+        talla:["XS","S","M","L","XL"],
+        imagen: "https://i.pinimg.com/564x/7d/d6/bb/7dd6bba01f7e3b6cbda23f913331d03f.jpg",
+    },
 
     //SECCIÓN BRAZALETES TEJIDOS **************************************************************
     {
-      id: 3,
+      id: 4,
         nombre: "Brazalete Mariposa",
         precio: 7.99,
         opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -43,7 +52,7 @@
         imagen: "https://i.pinimg.com/564x/b2/9f/ba/b29fbad58204010e3f0e726791e697e1.jpg",
     },
     {
-      id: 4,
+      id: 5,
       nombre: "Brazalete - dije Infinito",
       precio: 9.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -53,7 +62,7 @@
       imagen: "https://i.pinimg.com/564x/bf/f7/50/bff75073cbf72d2cf1f1b46de38d0ac3.jpg",
     },
     {
-      id: 5,
+      id: 6,
       nombre: "Brazalete - dije Mariposa",
       precio: 9.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -63,7 +72,7 @@
       imagen: "https://i.pinimg.com/564x/8f/50/51/8f505179e3252a8762b06e14ad164088.jpg",
     },
     {
-      id: 6,
+      id: 7,
       nombre: "Brazalete - dije Corazón",
       precio: 9.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -73,7 +82,7 @@
       imagen: "https://i.pinimg.com/564x/bc/ab/c4/bcabc403d178beb2674e280d90ba5f44.jpg",
     },
     {
-      id: 7,
+      id: 8,
       nombre: "Brazalete - dije ",
       precio: 9.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -85,7 +94,7 @@
 
     //SECCIÓN BRAZALETES BIZUTERIA ***************************************************************
     {
-      id: 8,
+      id: 9,
       nombre: "Brazalete de bisutería - Softs ",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -95,7 +104,7 @@
       imagen: "https://i.pinimg.com/564x/36/3d/c2/363dc2aed180bcbe935c2b621354006e.jpg",
     },
     {
-      id: 9,
+      id: 10,
       nombre: "Brazalete de bisutería - Indie slim ",
       precio: 5.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste",
@@ -105,7 +114,7 @@
       imagen: "https://i.pinimg.com/564x/ff/c7/9e/ffc79e48ba3ee2e783d321b43de3325f.jpg",
     },
     {
-      id: 10,
+      id: 11,
       nombre: "Brazalete de bisutería - Indie slim bicolor",
       precio: 5.99,
       opciones: ["Rojo","Rosado","Celeste","Lila",
@@ -115,7 +124,7 @@
       imagen: "https://i.pinimg.com/564x/84/e9/85/84e985059941d817e12c17ab8987ba5d.jpg",
     },
     {
-      id: 11,
+      id: 12,
       nombre: "Brazalete de bisutería - Indie slim flor",
       precio: 7.99,
       opciones: ["Sandía","Fresa","Uva","Pomelo","Naranja","Limón","Piña"],
@@ -124,7 +133,7 @@
       imagen: "https://i.pinimg.com/564x/48/c7/ac/48c7ac393f1a4c373bbb6f9a4b2d2683.jpg",
     },
     {
-      id: 12,
+      id: 13,
       nombre: "Duo Brazalete de bisutería - BFF's",
       precio: 19.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
@@ -136,8 +145,8 @@
 
     //SECCIÓN PORTANTEOJOS *************************************************************************
     {
-      id: 13,
-      nombre: "Porta anteojos de Bisuteria - Soft",
+      id: 14,
+      nombre: "Porta anteojos de Bizuteria - Soft",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro","Multicolor"],
@@ -146,8 +155,8 @@
       imagen: "https://i.pinimg.com/564x/02/3b/10/023b1009ed87e34a8bd1f19aae08bb0d.jpg",
     },
     {
-      id: 14,
-      nombre: "Porta anteojos de Bisuteria - Indie",
+      id: 15,
+      nombre: "Porta anteojos de Bizuteria - Indie",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
       "Verde","Amarillo","Negro","Multicolor"],
@@ -156,8 +165,8 @@
       imagen: "https://i.pinimg.com/564x/a2/89/79/a28979a82f0c574709e546df586cd3ae.jpg",
     },
     {
-      id: 15,
-      nombre: "Porta anteojos de Bisuteria - Minimalista",
+      id: 16,
+      nombre: "Porta anteojos de Bizuteria - Minimalista",
       precio: 14.99,
       opciones: ["Blanco","Negro","Beige","Gris","Café","Multicolor"],
       categorias:"anteojos",
@@ -167,7 +176,7 @@
 
     //SECCIÓN GARGANTILLAS **********************************************************************
     {
-      id: 16,
+      id: 17,
       nombre: "Gargantilla / Collar de Bizuteria - Soft",
       precio: 14.99,
       opciones: ["Blanco","Rojo","Rosado","Celeste","Lila",
@@ -177,7 +186,7 @@
       imagen: "https://i.pinimg.com/564x/5c/de/12/5cde12e849c3cd909899b1b30cf4ec0b.jpg",
     },
     {
-      id: 17,
+      id: 18,
       nombre: "Gargantilla / Collar de Bizuteria - Indie",
       precio: 14.99,
       opciones: ["Rojo","Rosado","Celeste","Lila",
@@ -188,7 +197,7 @@
     },
     //SECCIÓN BAUTIZOS ************************************************************************************
     {
-      id: 18,
+      id: 19,
       nombre: "Rosario bizuteria tradicional",
       precio: 14.99,
       opciones: ["Blanco","Negro"],
@@ -197,7 +206,7 @@
       imagen: "https://i.pinimg.com/564x/55/99/5c/55995c351f60584e54545d59cba6af2e.jpg",
     },
     {
-      id: 19,
+      id: 20,
       nombre: "Rosario bizuteria perlas",
       precio: 14.99,
       opciones: ["Blanco","Negro"],
@@ -206,6 +215,3 @@
       imagen: "https://i.pinimg.com/564x/ad/2e/5a/ad2e5ad1071c2509fc990df149272eee.jpg",
     },
   ]
-
-
-//<img src="./img/x.png" alt="">

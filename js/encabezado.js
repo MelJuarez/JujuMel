@@ -12,16 +12,17 @@ let contenido_up = `
         <main class="menu_flotante">
 
         <div class="minibox">
-            <a href="./index.html">
-                <img class= "bolsas" src="./img/bag.png" alt="">
+        
+            <button class="bolsas-btn">
+            <div id="bolsas-img"> </div>
+                <img class="bolsas" src="./img/bag.png" alt="">
                 <p class="texto">Bag</p>
-            </a>
-            
+            </button>            
         </div>
 
            
         <div class="minibox">
-            <a href="./index.html">
+            <a class="home" href="./index.html">
                 <img src="./img/casa.png" alt="">
                 <p class="texto">Home</p>
             </a>
@@ -46,27 +47,27 @@ let contenido_up = `
        
     </main>
 
-        <ul class="menu">
-            <!---Opciones de menú -->
-            <li class="uno"><a href="./categoria1.html">ARETES</a></li>
-            <li class="dos"><a href="./categoria2.html">TEJIDOS</a></li>
-            <li class="tres"><a href="./categoria3.html">BIZUTERÍA</a></li>
-            <li class="cuatro"><a href="./categoria4.html">PORTA ANTEOJOS</a></li>
-            <li class="cinco"><a href="./categoria5.html">COLLARES</a></li>
-        </ul>
+      
 
 `
 let up =  document.querySelector("header");
 
 up.innerHTML = contenido_up; 
 
+// Evento clic en el enlace "Home"
+const homeLink = up.querySelector(".home");
+homeLink.addEventListener("click", (e) => {
+  e.preventDefault(); // Evitar que se recargue la página
+  //window.scrollTo(0, 0); // Desplazar al inicio de la página
+  window.location.href = "./index.html";
+});
 
-let carrito = [];
 
-function actualizarBurbuja() {
-  const bolsasImg = document.querySelector(".bolsas");
-  const burbuja = document.createElement("span");
-  burbuja.classList.add("burbuja");
-  burbuja.textContent = carrito.length;
-  bolsasImg.appendChild(burbuja);
-}
+/*<ul class="menu">
+<!---Opciones de menú -->
+<li class="uno"><a href="./categoria1.html">ARETES</a></li>
+<li class="dos"><a href="./categoria2.html">TEJIDOS</a></li>
+<li class="tres"><a href="./categoria3.html">BIZUTERÍA</a></li>
+<li class="cuatro"><a href="./categoria4.html">PORTA ANTEOJOS</a></li>
+<li class="cinco"><a href="./categoria5.html">COLLARES</a></li>
+</ul>*/

@@ -105,22 +105,20 @@ header{
 
 
 .menu_flotante button{
-    height: 2.5rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
 
     padding-top: 0.1rem;
  
 
     border-style: none;
     border-radius: 0.5rem;
-    border: solid white 2px;
+    /*border: solid white 2px;*/
     
     font-family: 'Poppins';
     font-weight: 600;
-
     
     background-color: var(--color4--);
-
     color: var(--color1--);
     
 }
@@ -170,7 +168,12 @@ header{
     color: var(--color4--) ;
     /*color: var(--color4--);*/
     animation: fadeInOut 3s infinite; /* Repetir la animación infinitamente */
+    
 }
+.hide{
+    display: none;
+}
+
 .menu a{
     text-decoration: none;
     color: var(--color1--);
@@ -183,4 +186,77 @@ header{
     display: none;
 }
 
+.contenedor{
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor h4{
+   margin-top: 4rem;
+   font-size: 3rem;
+}
+.contenedor ul{
+    text-align:justify;
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+.contenedor li{
+    font-size: 2.3rem;
+    margin-left: -115%;
+}
+.contenedor p{
+    margin-top: 2rem;
+    color: var(--color4--);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.subcontenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.contenedor img{
+    height: 27rem;
+    filter: brightness(70%); 
+}
+
+.categ{
+    width: 27rem;
+    height: 27rem;
+    text-align: left;
+ 
+    position: relative;
+    text-align: center;
+
+}
+
+.categ .h5s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color1--);
+    width: 100%;
+
+}
+
+@media only screen and (max-width:815px){
+    .dependeIMG {
+      display: none;
+    }
+    
+
+}
+@media only screen and (max-width:1339px){
+    #imgD {
+      display: none;
+    }
+    
+
+}
 

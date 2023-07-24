@@ -5,6 +5,8 @@ import { cerrarDetalles } from "../js/main.js";
 import { cierre } from "../js/main.js";
 
 
+SEARCH();
+
 let SeccionCollares = document.querySelector(".Collares")
 function Collares (){
 
@@ -51,6 +53,6 @@ function Collares (){
 };
 
 Collares();
-SEARCH();
+
 cerrarDetalles(SeccionCollares)
 cierre();
