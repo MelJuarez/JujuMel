@@ -1,0 +1,22 @@
+.Mision{
+    display: flex;
+    background-color:#c9b0ff ;
+   /* margin-left: 3%;
+    margin-right: 3%;*/
+}
+.Mision p{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 8%;
+}
+.Mision2{
+    display: flex;
+    background-color: #8ad0ee;   
+}
+.Mision2 p{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 8%;
+}

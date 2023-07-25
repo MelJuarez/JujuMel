@@ -25,7 +25,7 @@ let contenido_footer = `
 
         <div class="info">
         <a href="./About.html">ABOUT US</a>
-        <a href="#">MISION</a>
+        <a href="./Mision.html">MISION</a>
         <a href="#">VISION</a>
         </div>
 
