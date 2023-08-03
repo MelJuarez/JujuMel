@@ -1,20 +1,41 @@
-.Mision{
+.MiVi{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5rem;
+   
+   
+}
+.ContenedorM{
     display: flex;
-    background-color:#c9b0ff ;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.MiVis{
+    display: flex;
+    background-color:#b99cff ;
+    width: 90%;
+    margin-top: 4rem;
+    border-radius: 2rem;
    /* margin-left: 3%;
     margin-right: 3%;*/
 }
-.Mision p{
+.MiVis p{
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
     margin: 8%;
 }
-.Mision2{
+.MiVis2{
     display: flex;
-    background-color: #8ad0ee;   
+    background-color: #8ad0ee; 
+    margin-top: 4rem;
+    width: 90%;
+    border-radius: 2rem;
 }
-.Mision2 p{
+.MiVis2 p{
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
